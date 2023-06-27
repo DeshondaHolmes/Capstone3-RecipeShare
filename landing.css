@@ -3,7 +3,7 @@
     max-width: 500px;
     /* Adjust the width as per your needs */
     
-  margin-top: 10%; 
+  margin-top: 1%; 
   margin-left: 60%;
   margin-right: auto;
   padding-top: 4%;
@@ -62,4 +62,10 @@ h1{
 .form-button{
   margin-left: 14%;
 
+}
+
+#logo{
+  margin-left: 60%;
+  margin-top: 10%;
+  
 }
