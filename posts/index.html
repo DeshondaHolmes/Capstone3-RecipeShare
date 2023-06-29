@@ -48,7 +48,9 @@
                         <a class="btn btn-danger" id="logoutButton">Logout</a>
 
                     </div>
-                
+                    <h4><a href="#commentsOfPage">View Comments</a></h4>
+                    <!--Hero section start -->
+                    <div class="container">
 
 
                         <p id="heroSection">
@@ -82,10 +84,10 @@
                                             <!-- Users post card content -->
                                             <div id="sortUsers">
                                                 <div class="col-md-6">
-                                             
-                                           
+
+
                                                     <div class="d-flex gap-2 mb-3">
-                                                        <button type="button" class="btn btn-secondary" id="defaultBtn" aria-label="default">
+                                                        <button type="button" class="btn btn-secondary">
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="16"
                                                                 height="16" fill="currentColor" class="bi bi-list-ul"
                                                                 viewBox="0 0 16 16">
@@ -95,35 +97,21 @@
                                                             </svg>
                                                         </button>
                                                         <div class="btn-group">
-                                                            <button type="button" class="btn btn-outline-secondary" id="leastLikeBtn" aria-label="leastLikes">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                                fill="currentColor" class="bi bi-sort-down"
-                                                                viewBox="0 0 16 16">
-                                                                <path
-                                                                    d="M3.5 2.5a.5.5 0 0 0-1 0v8.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L3.5 11.293V2.5zm3.5 1a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM7.5 6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zm0 3a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z" />
-                                                            </svg>
-                                                                <span class="visually-hidden">Button</span>
-                                                            </button>
-                                                            <button type="button" class="btn btn-outline-secondary" id="mostLikeBtn" aria-label="mostLikes">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                                fill="currentColor" class="bi bi-sort-up"
-                                                                viewBox="0 0 16 16">
-                                                                <path
-                                                                    d="M3.5 12.5a.5.5 0 0 1-1 0V3.707L1.354 4.854a.5.5 0 1 1-.708-.708l2-1.999.007-.007a.498.498 0 0 1 .7.006l2 2a.5.5 0 1 1-.707.708L3.5 3.707V12.5zm3.5-9a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM7.5 6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zm0 3a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z" />
-                                                            </svg>
-                                                                <span class="visually-hidden">Button</span>
-                                                            </button>
-                                                            <button type="button" class="btn btn-outline-secondary" id="searchBtn" aria-label="search">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search-heart" viewBox="0 0 16 16">
-                                                                    <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z"/>
-                                                                    <path d="M13 6.5a6.471 6.471 0 0 1-1.258 3.844c.04.03.078.062.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1.007 1.007 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5ZM6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z"/>
-                                                                  </svg>
+
+                                                            <button type="button" class="btn btn-primary btn-lg"
+                                                                id="mostLikedButton">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" fill="currentColor"
+                                                                    class="bi bi-sort-up" viewBox="0 0 16 16">
+                                                                    <path
+                                                                        d="M3.5 12.5a.5.5 0 0 1-1 0V3.707L1.354 4.854a.5.5 0 1 1-.708-.708l2-1.999.007-.007a.498.498 0 0 1 .7.006l2 2a.5.5 0 1 1-.707.708L3.5 3.707V12.5zm3.5-9a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM7.5 6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zm0 3a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z" />
+                                                                </svg>
                                                                 <span class="visually-hidden">Button</span>
                                                             </button>
                                                         </div>
                                                     </div>
-                                                    <div class="input-group" id="inputGroup">
-                                                        <span class="input-group-text" id="basic-addon1">
+                                                    <div class="input-group">
+                                                        <button class="input-group-text" id="basic-addon1">
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="16"
                                                                 height="16" fill="currentColor" class="bi bi-search"
                                                                 viewBox="0 0 16 16">
@@ -131,12 +119,10 @@
                                                                     d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
                                                                 </path>
                                                             </svg>
-                                                        </span>
-                                                        <input type="text" class="form-control"
-                                                            id="inputSearch"
-                                                            placeholder="Input group example"
-                                                            aria-label="Input group example"
-                                                            aria-describedby="basic-addon1">
+                                                        </button>
+                                                        <input type="text" id="searchInput"
+                                                            placeholder="Search by username..." aria-label="searchInput"
+                                                            aria-describedby="searchInput">
                                                     </div>
                                                 </div>
                                             </div>
@@ -151,12 +137,80 @@
                     </div>
                 </div>
             </div>
-            <div id="usersPostCard">
-                <!-- Users post card content -->
 
-                <div id="buttonContainer"></div>
+
+        </div>
+        <div class="card-group">
+            <div class="card">
+                <div class="card mb-3" style="max-width: 540px;">
+                    <img src="/images/recipeHoney.jpg" class="rounded-end" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Blueberries and Cereal Meal</h5>
+
+                        <h2>Ingredients:</h2>
+
+
+                        <ul>
+                            <li>1 cup fresh blueberries</li>
+                            <li>1 cup cereal of your choice (such as corn flakes, granola, or oatmeal)</li>
+                            <li>1 cup milk (dairy or non-dairy alternative)</li>
+                            <li>Honey or sweetener (optional)</li>
+                        </ul>
+
+                        <h2>Instructions:</h2>
+                        <ol>
+                            <li>Wash the fresh blueberries thoroughly under running water and drain them.
+                            </li>
+                            <li>In a serving bowl or individual bowls, pour 1 cup of your favorite cereal.
+                            </li>
+                            <li>Add the fresh blueberries on top of the cereal.</li>
+                            <li>Pour 1 cup of milk over the cereal and blueberries. You can adjust the
+                                amount of milk based
+                                on your preference for a thicker or thinner consistency.</li>
+                            <li>Optionally, drizzle honey or your preferred sweetener over the top for added
+                                sweetness.</li>
+                            <li>Mix the ingredients gently with a spoon, ensuring that the blueberries are
+                                evenly
+                                distributed throughout the cereal.</li>
+                            <li>Let the cereal soak for a minute or two to allow the flavors to blend
+                                together.</li>
+                            <li>Enjoy your quick and nutritious blueberries and cereal meal!</li>
+                        </ol>
+
+                        <p class="optional">Note: Feel free to customize this recipe by adding other
+                            toppings like sliced
+                            almonds, chia seeds, or a sprinkle of cinnamon for added flavor and texture.
+                        <p>
+                    </div>
+
+
+
+
+                </div>
             </div>
+            <div class="">
 
+
+                <div id="usersPostCard">
+                    <!-- Users post card content -->
+
+                    <div id="buttonContainer"></div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a
+                        natural
+                        lead-in to additional content. This card has even longer content than the
+                        first
+                        to show that equal height action.</p>
+                </div>
+                <div class="card-footer">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                </div>
+            </div>
         </div>
 
         <!--Mountain section start-->
@@ -199,8 +253,6 @@
                             autem commodi sint praesentium facere optio qui dignissimos pariatur.
                         </p>
 
-
-
                     </section>
                 </div>
             </div>
@@ -208,16 +260,12 @@
         <div class="col-lg-7 mx-sm-5">
 
             <h2>Quick recipes</h2>
-            <!-- 
-                        <video width="85%" height="85%" autoplay muted class="rounded-pill">
-                            <source src="/images/VIDEO5.mp4" type="video/mp4">
 
-                        </video> -->
 
         </div>
-        </div>
 
-        </div>
+
+
 
         <!--National Park section-->
         <div class="container border">
@@ -268,6 +316,11 @@
 
 
                         </div>
+
+
+
+
+
                         <div class="card mb-3" style="max-width: 540px;">
                             <img src="/images/recipeHoney.jpg" class="rounded-end" alt="...">
                             <div class="card-body">
@@ -312,45 +365,6 @@
 
                         </div>
 
-                        <div class="card-group">
-                            <div class="card">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a
-                                        natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                </div>
-                                <div class="card-footer">
-                                    <small class="text-body-secondary">Last updated 3 mins ago</small>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This card has supporting text below as a natural lead-in to
-                                        additional content.</p>
-                                </div>
-                                <div class="card-footer">
-                                    <small class="text-body-secondary">Last updated 3 mins ago</small>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <img src="..." class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a
-                                        natural
-                                        lead-in to additional content. This card has even longer content than the
-                                        first
-                                        to show that equal height action.</p>
-                                </div>
-                                <div class="card-footer">
-                                    <small class="text-body-secondary">Last updated 3 mins ago</small>
-                                </div>
-                            </div>
-                        </div>
 
                         <div>
                             <div class="card">
@@ -436,7 +450,7 @@
                 <h1><a href="#topOfPage">Back to top</a></h1>
             </div>
         </div>
-        </div>
+
 
 
 

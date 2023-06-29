@@ -1,5 +1,6 @@
 
 
+
 # Recipe Share Blog
 
 Welcome to our Recipe Share Blog project! This is a web application we worked on that enables users to share and discover food recipes through blogging. Users can create an account, write blog posts about their favorite recipes, and engage with the community through posts and likes.
@@ -26,4 +27,5 @@ We created 4 pages (landing page, registration page, posts page and a profile pa
 
 ![Profile](./images/profile%20(2).JPG)
 
-![Post page](http://url/to/img.png)
+
+
