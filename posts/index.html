@@ -48,139 +48,118 @@
                         <a class="btn btn-danger" id="logoutButton">Logout</a>
 
                     </div>
-                
 
 
-                        <p id="heroSection">
-                            Welcome to "The Recipe Exchange" - a blog where culinary enthusiasts gather to
-                            share
-                            their favorite recipes from around the world!
-                        </p>
+
+                    <p id="heroSection">
+                        Welcome to "The Recipe Exchange" - a blog where culinary enthusiasts gather to
+                        share
+                        their favorite recipes from around the world!
+                    </p>
 
 
+                </div>
+                <!--Hero section end-->
+                <div class="card" id="quotecard">
+                    <div class="card-header ">
+                        Quote
                     </div>
-                    <!--Hero section end-->
-                    <div class="card" id="quotecard">
-                        <div class="card-header ">
-                            Quote
-                        </div>
-                        <div class="card-body">
-                            <blockquote class="blockquote mb-0">
-                                <p>"Sharing recipes is like sharing a piece of your heart and soul with others."</p>
-                                <footer class="blockquote-footer">-Unknown...
-                            </blockquote>
-                        </div>
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                            <p>"Sharing recipes is like sharing a piece of your heart and soul with others."</p>
+                            <footer class="blockquote-footer">-Unknown...
+                        </blockquote>
                     </div>
-                    <hr>
-                    <div class="card" id="postsFromUsers">
+                </div>
+                <hr>
+                <div class="card" id="postsFromUsers">
 
-                        <div class="container border">
-                            <div class="row">
-                                <div class="col">
-                                    <div class="card">
-                                        <div id="usersSort">
-                                            <!-- Users post card content -->
-                                            <div id="sortUsers">
-                                                <div class="col-md-6">
+                    <div class="container border">
+                        <div class="row">
+                            <div class="col">
+                                <div class="card">
+                                    <div id="usersSort">
+                                        <!-- Users post card content -->
+                                        <div id="sortUsers">
+                                            <div class="col-md-6">
 
 
-                                                    <div class="d-flex gap-2 mb-3">
-                                                        <button type="button" class="btn btn-secondary" id="defaultBtn" aria-label="default">
+                                                <div class="d-flex gap-2 mb-3">
+                                                    <button type="button" class="btn btn-secondary" id="defaultBtn"
+                                                        aria-label="default">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-list-ul"
+                                                            viewBox="0 0 16 16">
+                                                            <path fill-rule="evenodd"
+                                                                d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z">
+                                                            </path>
+                                                        </svg>
+                                                    </button>
+                                                    <div class="btn-group">
+
+
+                                                        <button type="button" class="btn btn-outline-secondary">
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                                height="16" fill="currentColor" class="bi bi-list-ul"
-                                                                viewBox="0 0 16 16">
-                                                                <path fill-rule="evenodd"
-                                                                    d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm-3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm0 4a1 1 0 1 0 0-2 1 1 0 0 0 0 2z">
-                                                                </path>
-                                                            </svg>
-                                                        </button>
-                                                        <div class="btn-group">
-
-                                                            <button type="button" class="btn btn-outline-secondary">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                                    height="16" fill="currentColor"
-                                                                    class="bi bi-sort-down" viewBox="0 0 16 16">
-                                                                    <path
-                                                                        d="M3.5 2.5a.5.5 0 0 0-1 0v8.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L3.5 11.293V2.5zm3.5 1a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM7.5 6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zm0 3a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z" />
-                                                                </svg>
-                                                                <span class="visually-hidden">Button</span>
-                                                            </button>
-                                                            <button type="button" class="btn btn-outline-secondary">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                                    height="16" fill="currentColor"
-                                                                    class="bi bi-sort-up" viewBox="0 0 16 16">
-                                                                    <path
-                                                                        d="M3.5 12.5a.5.5 0 0 1-1 0V3.707L1.354 4.854a.5.5 0 1 1-.708-.708l2-1.999.007-.007a.498.498 0 0 1 .7.006l2 2a.5.5 0 1 1-.707.708L3.5 3.707V12.5zm3.5-9a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM7.5 6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zm0 3a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z" />
-                                                                </svg>
-                                                                <span class="visually-hidden">Button</span>
-                                                            </button>
-                                                            <button type="button" class="btn btn-outline-secondary">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                                    height="16" fill="currentColor"
-                                                                    class="bi bi-search-heart" viewBox="0 0 16 16">
-                                                                    <path
-                                                                        d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z" />
-                                                                    <path
-                                                                        d="M13 6.5a6.471 6.471 0 0 1-1.258 3.844c.04.03.078.062.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1.007 1.007 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5ZM6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z" />
-                                                                </svg>
-=======
-                                                            <button type="button" class="btn btn-outline-secondary" id="leastLikeBtn" aria-label="leastLikes">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                                fill="currentColor" class="bi bi-sort-down"
-                                                                viewBox="0 0 16 16">
-                                                                <path
-                                                                    d="M3.5 2.5a.5.5 0 0 0-1 0v8.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L3.5 11.293V2.5zm3.5 1a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM7.5 6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zm0 3a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z" />
-                                                            </svg>
-                                                                <span class="visually-hidden">Button</span>
-                                                            </button>
-                                                            <button type="button" class="btn btn-outline-secondary" id="mostLikeBtn" aria-label="mostLikes">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                                fill="currentColor" class="bi bi-sort-up"
+                                                                height="16" fill="currentColor" class="bi bi-sort-up"
                                                                 viewBox="0 0 16 16">
                                                                 <path
                                                                     d="M3.5 12.5a.5.5 0 0 1-1 0V3.707L1.354 4.854a.5.5 0 1 1-.708-.708l2-1.999.007-.007a.498.498 0 0 1 .7.006l2 2a.5.5 0 1 1-.707.708L3.5 3.707V12.5zm3.5-9a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM7.5 6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zm0 3a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z" />
                                                             </svg>
-                                                                <span class="visually-hidden">Button</span>
-                                                            </button>
-                                                            <button type="button" class="btn btn-outline-secondary" id="searchBtn" aria-label="search">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search-heart" viewBox="0 0 16 16">
-                                                                    <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z"/>
-                                                                    <path d="M13 6.5a6.471 6.471 0 0 1-1.258 3.844c.04.03.078.062.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1.007 1.007 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5ZM6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z"/>
-                                                                  </svg>
-
-                                                                <span class="visually-hidden">Button</span>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="input-group" id="inputGroup">
-                                                        <span class="input-group-text" id="basic-addon1">
+                                                            <span class="visually-hidden">Button</span>
+                                                        </button>
+                                                        <button type="button" class="btn btn-outline-secondary">
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                                height="16" fill="currentColor" class="bi bi-search"
-                                                                viewBox="0 0 16 16">
+                                                                height="16" fill="currentColor"
+                                                                class="bi bi-search-heart" viewBox="0 0 16 16">
                                                                 <path
-                                                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
-                                                                </path>
-                                                            </svg>
-                                                        </span>
-                                                        <input type="text" class="form-control"
-                                                            id="inputSearch"
-                                                            placeholder="Input group example"
-                                                            aria-label="Input group example"
-                                                            aria-describedby="basic-addon1">
+                                                                    d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z" />
+                                                                <path
+                                                                    d="M13 6.5a6.471 6.471 0 0 1-1.258 3.844c.04.03.078.062.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1.007 1.007 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5ZM6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z" />
+
+                                                                <button type="button" class="btn btn-outline-secondary"
+                                                                    id="leastLikeBtn" aria-label="leastLikes">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                        height="16" fill="currentColor"
+                                                                        class="bi bi-sort-down" viewBox="0 0 16 16">
+                                                                        <path
+                                                                            d="M3.5 2.5a.5.5 0 0 0-1 0v8.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L3.5 11.293V2.5zm3.5 1a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM7.5 6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zm0 3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1h-3zm0 3a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1z" />
+                                                                    </svg>
+                                                                    <span class="visually-hidden">Button</span>
+                                                                </button>
+
+
+                                                        </button>
+
                                                     </div>
                                                 </div>
+                                                <div class="input-group" id="inputGroup">
+                                                    <span class="input-group-text" id="basic-addon1">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            fill="currentColor" class="bi bi-search"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                                                            </path>
+                                                        </svg>
+                                                    </span>
+                                                    <input type="text" class="form-control" id="inputSearch"
+                                                        placeholder="Input group example"
+                                                        aria-label="Input group example"
+                                                        aria-describedby="basic-addon1">
+                                                </div>
                                             </div>
-
                                         </div>
+
                                     </div>
                                 </div>
                             </div>
-
                         </div>
 
                     </div>
+
                 </div>
             </div>
+        </div>
 
 
         </div>
