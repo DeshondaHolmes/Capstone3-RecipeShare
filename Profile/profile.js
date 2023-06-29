@@ -114,9 +114,6 @@ function onUpdateBioBtnClick(){
     .then(updatedProfile => {
         console.log(updatedProfile);
  
-         // Update the bio text with the updated value
-         bio.textContent = editBioInput.value;
- 
           // Store the updated bio in local storage
          localStorage.setItem(`bio_${username}`, editBioInput.value);
 
