@@ -46,14 +46,14 @@ h1{
 
     margin-top: 2%;
     margin-bottom: 4%;
-    color: #456e3cb8;
+    color: #3d3c3be1;
 }
 
 
 #mainbox{
 
 
-    background-color: rgba(166, 165, 163, 0.236);
+    background-color: rgba(252, 252, 252, 0.789);
 
 
     margin-top: 4%;
@@ -68,11 +68,13 @@ h1{
 
 #bio {
    
-    border: 4px dotted #83cc8e; /* Add a border */
+    border: 4px dotted #9ec6a3; /* Add a border */
     padding: 10px; /* Add some padding around the content */
     padding: 1%;
     border-radius: 20px;
     width: 85%;
+    color: rgb(95, 195, 49);
+    background-color: rgba(233, 246, 205);
    
 
 }
@@ -137,10 +139,12 @@ h1{
 }
 
 #postContainer{
-    border: 4px dotted #73b99b;
-    padding: 1%;
+    border: 4px dotted #9dc696;  
     border-radius: 20px;
-
+    background-color: rgb(233, 246, 205);
+    color: rgb(95, 195, 49);
+    
+    /* #4d7e68 */
 }
 
 
@@ -152,8 +156,9 @@ h1.text-center {
     margin-bottom: 10px; /* Adjust the margin-bottom*/
 }
 
-h1{
+#title{
     text-align:center;
-    margin-top: 8%;
+    margin-top: 6%;
     margin-bottom: -3%;
+   
 }

@@ -48,9 +48,7 @@
                         <a class="btn btn-danger" id="logoutButton">Logout</a>
 
                     </div>
-                    <h4><a href="#commentsOfPage">View Comments</a></h4>
-                    <!--Hero section start -->
-                    <div class="container">
+                
 
 
                         <p id="heroSection">
@@ -87,7 +85,7 @@
                                              
                                            
                                                     <div class="d-flex gap-2 mb-3">
-                                                        <button type="button" class="btn btn-secondary">
+                                                        <button type="button" class="btn btn-secondary" id="defaultBtn" aria-label="default">
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="16"
                                                                 height="16" fill="currentColor" class="bi bi-list-ul"
                                                                 viewBox="0 0 16 16">
@@ -97,7 +95,7 @@
                                                             </svg>
                                                         </button>
                                                         <div class="btn-group">
-                                                            <button type="button" class="btn btn-outline-secondary">
+                                                            <button type="button" class="btn btn-outline-secondary" id="leastLikeBtn" aria-label="leastLikes">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                                 fill="currentColor" class="bi bi-sort-down"
                                                                 viewBox="0 0 16 16">
@@ -106,7 +104,7 @@
                                                             </svg>
                                                                 <span class="visually-hidden">Button</span>
                                                             </button>
-                                                            <button type="button" class="btn btn-outline-secondary">
+                                                            <button type="button" class="btn btn-outline-secondary" id="mostLikeBtn" aria-label="mostLikes">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                                 fill="currentColor" class="bi bi-sort-up"
                                                                 viewBox="0 0 16 16">
@@ -115,7 +113,7 @@
                                                             </svg>
                                                                 <span class="visually-hidden">Button</span>
                                                             </button>
-                                                            <button type="button" class="btn btn-outline-secondary">
+                                                            <button type="button" class="btn btn-outline-secondary" id="searchBtn" aria-label="search">
                                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search-heart" viewBox="0 0 16 16">
                                                                     <path d="M6.5 4.482c1.664-1.673 5.825 1.254 0 5.018-5.825-3.764-1.664-6.69 0-5.018Z"/>
                                                                     <path d="M13 6.5a6.471 6.471 0 0 1-1.258 3.844c.04.03.078.062.115.098l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1.007 1.007 0 0 1-.1-.115h.002A6.5 6.5 0 1 1 13 6.5ZM6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11Z"/>
@@ -124,7 +122,7 @@
                                                             </button>
                                                         </div>
                                                     </div>
-                                                    <div class="input-group">
+                                                    <div class="input-group" id="inputGroup">
                                                         <span class="input-group-text" id="basic-addon1">
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="16"
                                                                 height="16" fill="currentColor" class="bi bi-search"
@@ -135,6 +133,7 @@
                                                             </svg>
                                                         </span>
                                                         <input type="text" class="form-control"
+                                                            id="inputSearch"
                                                             placeholder="Input group example"
                                                             aria-label="Input group example"
                                                             aria-describedby="basic-addon1">
