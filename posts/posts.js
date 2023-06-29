@@ -8,11 +8,23 @@ const logoutButton = document.getElementById("logoutButton");
 
 const usersPostCard = document.getElementById("usersPostCard");
 
-const buttonContainer = document.getElementById('buttonContainer');
+const buttonContainer = document.getElementById("buttonContainer");
 
+const mostLikedButton = document.getElementById("mostLikedButton");
+
+
+const searchInput = document.getElementById("searchInput");
+
+
+
+console.log(mostLikedButton);
 
 window.onload = () => {
-    console.log("hello");
+    
+
+    
+
+    mostLikedButton.onclick = mostLikedSort;
 
     buttonContainer.onclick = handleClick;
 
@@ -23,9 +35,6 @@ window.onload = () => {
     console.log("click");
 
 }
-
-
-
 
 function getAllPosts() {
     // GET /api/users
@@ -42,9 +51,70 @@ function getAllPosts() {
         .then(posts => {
             // Do something with the users array...
             console.log(posts);
-            buildUserPostsCard(posts);
+         
+            mostLikedSort(posts);
         });
 }
+
+function sortUsernameSearch (posts){
+    typedUsername = searchInput.value;
+    buildUserPostsCard(posts);
+    
+
+}
+
+
+
+function mostLikedSort(posts){
+    console.log('hello');
+    posts.sort((a, b) => b.likes.length - a.likes.length);
+    buildUserPostsCard(posts);
+
+}
+function performSearch(searchTerm) {
+    // Make an API call to search for usernames
+    fetch(apiBaseURL + "/api/users?username=" + searchTerm)
+        .then(response => response.json())
+        .then(users => {
+            // Process the search results
+            displaySearchResults(users);
+        })
+        .catch(error => console.error(error));
+}
+
+
+function displaySearchResults(users) {
+    var searchResultsContainer = document.getElementById("searchResults");
+
+    // Clear previous results
+    searchResultsContainer.innerHTML = "";
+
+    // Check if any users match the search query
+    if (users.length === 0) {
+        var noResultsMessage = document.createElement("p");
+        noResultsMessage.textContent = "No results found.";
+        searchResultsContainer.appendChild(noResultsMessage);
+        return;
+    }
+
+    // Iterate through the users and create HTML elements
+    users.forEach(function(user) {
+        var userCard = document.createElement("div");
+        userCard.className = "user-card";
+
+        var username = document.createElement("p");
+        username.textContent = "Username: " + user.username;
+
+        var fullName = document.createElement("p");
+        fullName.textContent = "Full Name: " + user.fullName;
+
+        userCard.appendChild(username);
+        userCard.appendChild(fullName);
+        searchResultsContainer.appendChild(userCard);
+    });
+}
+
+
 
 
 // function to build userPostCard
@@ -142,7 +212,7 @@ function handleLike(postId, likeButton) {
     const isLiked = !likeButton.classList.contains("liked");
     updateLikeButton(likeButton, isLiked);
 
-    if (isLiked) {
+    if (isLiked>0) {
         likeCount++;
     } else {
         likeCount--;
@@ -210,9 +280,6 @@ function toggleLike(likeButton) {
 
     return isLiked;
 }
-
-
-
 
 function deletePostForUser(theId) {
     console.log(theId);
