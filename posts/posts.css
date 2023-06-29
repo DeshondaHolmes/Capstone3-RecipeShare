@@ -42,7 +42,7 @@ body{
 
 
 body {
-    background-image: url("/images/backgroundTest.png");
+    background-image: url("/images/recipeCardTarts.png");
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -92,7 +92,7 @@ p {
     padding: 5%;
     border-radius: 20px;
 
-    background-color: rgba(186, 208, 144, 0.5);
+    /* background-color: rgba(186, 208, 144, 0.5); */
 
 
 

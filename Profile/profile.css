@@ -2,7 +2,9 @@
 
 body {
     min-height: 100%;
-    background-image: url(../images/backgroundTest.png);
+
+    background-image: url(../images/tart5.jpg);
+
     background-color: rgb(255, 255, 255);
     background-size: cover;
     /* background-position: center;
@@ -50,7 +52,10 @@ h1{
 
 #mainbox{
 
+
     background-color: rgba(166, 165, 163, 0.236);
+
+
     margin-top: 4%;
 
 }
@@ -144,7 +149,7 @@ h1{
 }
 
 h1.text-center {
-    margin-bottom: 10px; /* Adjust the margin-bottom value as needed */
+    margin-bottom: 10px; /* Adjust the margin-bottom*/
 }
 
 h1{
