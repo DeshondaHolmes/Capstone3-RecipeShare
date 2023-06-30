@@ -72,3 +72,9 @@ h1{
   color: white; 
 }
   
+@media (max-width: 600px) {
+  .container {
+      width: 90%;
+      padding: 10px;
+  }
+}
