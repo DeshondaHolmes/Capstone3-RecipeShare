@@ -1,14 +1,13 @@
 .card {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-    margin: 10%;
-
+    margin: 1%;
+    margin: auto;
+    border-radius: 20px;
+    margin-bottom: 3%;
+    border-color: rgb(244, 246, 244);
+    background-color: rgba(252, 252, 252, 0.849);
+   
 }
-
-
-
-
-
 
 #profileLinks {
     display: flex;
@@ -26,8 +25,13 @@
 
 main {
 
-
     height: 100%;
+}
+
+#logoImage {
+    margin-left: 45%;
+    
+    
 }
 
 
@@ -59,14 +63,15 @@ html {
 
 
 #heroSection {
-    display: flex;
-    flex-wrap: nowrap;
-    text-align: center;
-    align-content: center;
-    justify-content: center;
-    font-size: 40px;
+    display: finline-flex;
+    padding: 8%;
+    flex-wrap: wrap;
+    text-align: left;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+    font-size: 30px;
     font-style: oblique;
-    font-weight: 700;
+    font-weight: bolder;
+    
 }
 
 
@@ -76,11 +81,11 @@ p {
     text-align: center;
     align-content: center;
     justify-content: center;
-   
-    font-size: 175%;
-    color:black;
+
+    font-size: 100%;
+    color: black;
     font-style: oblique;
-    font-weight: 700%;
+    font-weight: 100%;
     font-family: 'Times New Roman', Times, serif;
 }
 
@@ -89,9 +94,9 @@ p {
 
 
 #usersPostCard {
-    border: 4px #737bb9;
-    padding: 5%;
-    border-radius: 20px;
+    border: 0px #737bb9;
+    padding: 2%;
+    border-radius: 1px;
 
     /* background-color: rgba(186, 208, 144, 0.5); */
 
@@ -108,16 +113,6 @@ p {
     height: 100vh;
 }
 
-.card {
-    max-width: 750px;
-    margin: auto;
-    border-radius: 20px;
-    margin-bottom: 3%;
-    border-color: rgb(244, 246, 244);
-    background-color: rgba(252, 252, 252, 0.789);
-
-
-}
 
 #profileButton {
     background-color: rgb(159, 210, 38);
@@ -135,9 +130,14 @@ p {
 
 #quotecard {
 
-    background-color: rgba(186, 208, 144, 0.5);
+    background-color: rgba(128, 159, 71, 0.825);
 }
 
+.blockquote-footer{
+    color:black;
+    font-size: larger;
+    
+}
 
 
 /* @media (max-width: 480px) {
@@ -150,43 +150,41 @@ p {
 #mountainInfo,
 #nationalPark {
     display: flex;
-    flex-wrap: wrap;
-   
-    
+    flex-wrap: nowrap;
+
+
 
 }
 
 #nationalPark {
     direction: rtl;
-    justify-content: space-between;
+    justify-content: space;
+    margin-top: 2%;
     align-content: flex-start;
+
+}
+
+#blogContent{
+    direction: ltr;
+    justify-content: space;
+    margin-top: 2%;
+    align-content: flex-start;
+    display: flex;
+    flex-wrap: nowrap;
 
 }
 
 #nationalParkHome {
     direction: ltr;
-    
+
 
 }
 
 #mountainInfoHome {
     direction: ltr;
-    
+
 }
 
 
 
 /*mountain paragraph styling left to right*/
-#mountainInfo {
-    direction: ltr;
-    justify-content: space-between;
-    align-content: flex-end;
- 
-    align-items: flex-end;
-
-}
-
-
-
-
-
