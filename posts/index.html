@@ -1,8 +1,15 @@
 <!-- POSTS page -->
 <!DOCTYPE html>
+
+
 <html lang="en">
 
+
+
+<!-- information need for browser in head -->
+
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,6 +35,9 @@
         if (isLoggedIn() === false) window.location.replace("/");
     </script>
 </head>
+<!-- information need for browser in head -->
+
+
 
 <body>
 
@@ -36,15 +46,19 @@
         <div class="container">
             <div class="row">
                 <div class="col">
+
+                    <!-- start of profile links  -->
                     <header id="topOfPage">
+
+                        <div id="profileLinks">
+
+                            <a class="btn btn-primary" href="../Profile/index.html" id="profileButton">Profile page</a>
+                            <a class="btn btn-danger" id="logoutButton">Logout</a>
+
+                        </div>
                     </header>
+                    <!-- End of profile links  -->
 
-                    <div id="profileLinks">
-
-                        <a class="btn btn-primary" href="../Profile/index.html" id="profileButton">Profile page</a>
-                        <a class="btn btn-danger" id="logoutButton">Logout</a>
-
-                    </div>
 
                     <!--Hero section start -->
 
@@ -61,10 +75,10 @@
                             </p>
                         </div>
                     </div>
-
-
-
                     <!--Hero section end-->
+
+
+                    <!--quote card start -->
                     <div class="card" id="quotecard">
                         <div class="card-body">
                             <figure>
@@ -79,16 +93,18 @@
                             </figure>
                         </div>
                     </div>
+                    <!--quote card start -->
+
 
                     <!--Mountain section start-->
                     <div class="container  bg-body-tertiary rounded-top-pill">
                         <div class="row">
                         </div>
                         <div class="col">
-                            <div id="mountainInfo">
+                            <div id="quoteCard">
                                 <img src="/images/recipeCardLunch.png" width="400" height="400" class="rounded-circle"
                                     alt="mountainview">
-                                <section class="col-5" id="mountainInfoHome">
+                                <section class="col-5" id="quoteCardHome">
                                     <h2 class="mt-5">Hello there.</h2>
                                     <p>
                                         Welcome to our recipe sharing page!
@@ -103,16 +119,19 @@
                             </div>
                         </div>
                     </div>
+
+
+
                     <!--Mountain section end-->
 
                     <div class="container bg-body-secondary rounded-bottom-pill">
                         <div class="row">
-                            <div class="col-12" id="nationalPark">
+                            <div class="col-12" id="bloggerRecipeStarter2">
                                 <img src="/images/recipeCardPancake.png" width="400" height="370" class=" rounded-pill"
                                     alt="parkview">
 
 
-                                <section class="col-5" id="nationalParkHome">
+                                <section class="col-5" id="bloggerRecipe">
                                     <h2>Join us!</h2>
                                     <p>
                                         Join our vibrant community of food enthusiasts, where you'll find a
@@ -131,203 +150,127 @@
         </div>
 
 
-
-
-
-        <!-- apiUserPost -->
+        <!-- apiUserPost and blogContent start  -->
         <div class="card-group">
-
             <div class="">
                 <div class="container">
-
 
                     <!--BLOG CONTENT section-->
                     <div class="container">
                         <div class="row">
                             <div class="col-12" id="blogContent">
 
-                                <!-- sorting symbols -->
+                                <!-- user content on left START-->
                                 <div class="container">
+
+
                                     <div class="row">
                                         <div class="col">
-                                            <div class="">
 
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div>
-                                        <div class="row">
-                                            <div class="col">
+                                            <div class="container" id="bloggerContent1">
+                                                <div class="row">
+                                                    <div class="col">
 
-                                                <div class="container" id="bloggerContent">
-                                                    <div class="row">
-                                                        <div class="col">
+                                                        <div class="card">
+                                                            <img src="/images/recipeCardPancake.png" class="rounded-end"
+                                                                width="300" height="150" alt="...">
+                                                            <div class="card-body">
+                                                                <h1>Recipe Blog Share</h1>
 
-                                                            <div class="card">
-                                                                <img src="/images/recipeCardPancake.png"
-                                                                    class="rounded-end" width="300" height="150"
-                                                                    alt="...">
-                                                                <div class="card-body">
-                                                                    <h1>Recipe Blog Share</h1>
+                                                                <div class="recipe-card">
+                                                                    <h2>Pancake </h2>
+                                                                    <p class="author">Shared by Jane Smith</p>
 
-                                                                    <div class="recipe-card">
-                                                                        <h2>Pancake </h2>
-                                                                        <p class="author">Shared by Jane Smith</p>
+                                                                    <div class="description">
+                                                                        <p>Start your day with delicious homemade
+                                                                            pancakes!</p>
+                                                                    </div>
 
-                                                                        <div class="description">
-                                                                            <p>Start your day with delicious homemade
-                                                                                pancakes!</p>
-                                                                        </div>
+                                                                    <div class="ingredients">
+                                                                        <h3>Ingredients:</h3>
+                                                                        <ul>
+                                                                            <li>1 cup all-purpose flour</li>
+                                                                            <li>2 tablespoons sugar</li>
+                                                                            <li>1 teaspoon baking powder</li>
+                                                                            <li>1/2 teaspoon baking soda</li>
+                                                                            <li>1/4 teaspoon salt</li>
+                                                                            <li>1 cup buttermilk</li>
+                                                                            <li>1 large egg</li>
+                                                                            <li>2 tablespoons unsalted butter,
+                                                                                melted</li>
+                                                                            <li>Optional toppings: maple syrup,
+                                                                                fresh fruits, whipped cream</li>
+                                                                        </ul>
+                                                                    </div>
 
-                                                                        <div class="ingredients">
-                                                                            <h3>Ingredients:</h3>
-                                                                            <ul>
-                                                                                <li>1 cup all-purpose flour</li>
-                                                                                <li>2 tablespoons sugar</li>
-                                                                                <li>1 teaspoon baking powder</li>
-                                                                                <li>1/2 teaspoon baking soda</li>
-                                                                                <li>1/4 teaspoon salt</li>
-                                                                                <li>1 cup buttermilk</li>
-                                                                                <li>1 large egg</li>
-                                                                                <li>2 tablespoons unsalted butter,
-                                                                                    melted</li>
-                                                                                <li>Optional toppings: maple syrup,
-                                                                                    fresh fruits, whipped cream</li>
-                                                                            </ul>
-                                                                        </div>
+                                                                    <div class="instructions">
+                                                                        <h3>Instructions:</h3>
+                                                                        <ol>
+                                                                            <li>In a large mixing bowl, whisk
+                                                                                together the flour, sugar, baking
+                                                                                powder, baking
+                                                                                soda, and
+                                                                                salt.</li>
+                                                                            <li>In a separate bowl, whisk together
+                                                                                the buttermilk, egg, and
+                                                                                melted
+                                                                                butter.</li>
+                                                                            <li>Pour the wet ingredients into the
+                                                                                dry ingredients and stir until
+                                                                                just combined.
+                                                                                Do not
+                                                                                overmix; it's okay if there are some
+                                                                                lumps.</li>
+                                                                            <li>Heat a non-stick skillet or griddle
+                                                                                over medium heat. Grease it
+                                                                                lightly with
+                                                                                butter or
+                                                                                cooking spray.</li>
+                                                                            <li>Pour 1/4 cup of the pancake batter
+                                                                                onto the skillet for each
+                                                                                pancake.</li>
+                                                                            <li>Cook until bubbles form on the
+                                                                                surface of the pancake, then flip
+                                                                                and
+                                                                                cook for
+                                                                                another minute
+                                                                                or until golden brown.</li>
+                                                                            <li>Repeat with the remaining
+                                                                            <li>Serve the pancakes warm with your
+                                                                                favorite toppings, such as
+                                                                                maple
+                                                                                syrup, fresh
+                                                                                fruits, or
+                                                                                whipped cream.</li>
+                                                                        </ol>
+                                                                    </div>
 
-                                                                        <div class="instructions">
-                                                                            <h3>Instructions:</h3>
-                                                                            <ol>
-                                                                                <li>In a large mixing bowl, whisk
-                                                                                    together the flour, sugar, baking
-                                                                                    powder, baking
-                                                                                    soda, and
-                                                                                    salt.</li>
-                                                                                <li>In a separate bowl, whisk together
-                                                                                    the buttermilk, egg, and
-                                                                                    melted
-                                                                                    butter.</li>
-                                                                                <li>Pour the wet ingredients into the
-                                                                                    dry ingredients and stir until
-                                                                                    just combined.
-                                                                                    Do not
-                                                                                    overmix; it's okay if there are some
-                                                                                    lumps.</li>
-                                                                                <li>Heat a non-stick skillet or griddle
-                                                                                    over medium heat. Grease it
-                                                                                    lightly with
-                                                                                    butter or
-                                                                                    cooking spray.</li>
-                                                                                <li>Pour 1/4 cup of the pancake batter
-                                                                                    onto the skillet for each
-                                                                                    pancake.</li>
-                                                                                <li>Cook until bubbles form on the
-                                                                                    surface of the pancake, then flip
-                                                                                    and
-                                                                                    cook for
-                                                                                    another minute
-                                                                                    or until golden brown.</li>
-                                                                                <li>Repeat with the remaining
-                                                                                <li>Serve the pancakes warm with your
-                                                                                    favorite toppings, such as
-                                                                                    maple
-                                                                                    syrup, fresh
-                                                                                    fruits, or
-                                                                                    whipped cream.</li>
-                                                                            </ol>
-                                                                        </div>
-
-                                                                        <div class="note">
-                                                                            <p>Note: You can customize your pancakes by
-                                                                                adding ingredients like
-                                                                                chocolate chips,
-                                                                                blueberries, or
-                                                                                chopped nuts to the batter.</p>
-                                                                        </div>
+                                                                    <div class="note">
+                                                                        <p>Note: You can customize your pancakes by
+                                                                            adding ingredients like
+                                                                            chocolate chips,
+                                                                            blueberries, or
+                                                                            chopped nuts to the batter.</p>
                                                                     </div>
                                                                 </div>
                                                             </div>
-
                                                         </div>
 
-                                                        <div class="card mb-3" style="max-width: 240px;">
-                                                            <img src="/images/recipeHoney.jpg" class="rounded-end"
-                                                                alt="...">
-                                                            <div class="card-body">
-                                                                <h5 class="card-title"> Cereal Meal</h5>
-
-                                                                <h2>Ingredients:</h2>
-
-
-                                                                <ul>
-                                                                    <li>1 cup fresh blueberries</li>
-                                                                    <li>1 cup cereal of your choice (such as corn
-                                                                        flakes, granola, or oatmeal)
-                                                                    </li>
-                                                                    <li>1 cup milk (dairy or non-dairy alternative)</li>
-                                                                    <li>Honey or sweetener (optional)</li>
-                                                                </ul>
-
-                                                                <h2>Instructions:</h2>
-                                                                <ol>
-                                                                    <li>Wash the fresh blueberries thoroughly under
-                                                                        running water and drain
-                                                                        them.
-                                                                    </li>
-                                                                    <li>In a serving bowl or individual bowls, pour 1
-                                                                        cup of your favorite
-                                                                        cereal.
-                                                                    </li>
-                                                                    <li>Add the fresh blueberries on top of the cereal.
-                                                                    </li>
-                                                                    <li>Pour 1 cup of milk over the cereal and
-                                                                        blueberries. You can adjust the
-                                                                        amount of milk based
-                                                                        on your preference for a thicker or thinner
-                                                                        consistency.</li>
-                                                                    <li>Optionally, drizzle honey or your preferred
-                                                                        sweetener over the top for
-                                                                        added
-                                                                        sweetness.</li>
-                                                                    <li>Mix the ingredients gently with a spoon,
-                                                                        ensuring that the blueberries
-                                                                        are
-                                                                        evenly
-                                                                        distributed throughout the cereal.</li>
-                                                                    <li>Let the cereal soak for a minute or two to allow
-                                                                        the flavors to blend
-                                                                        together.</li>
-                                                                    <li>Enjoy your quick and nutritious blueberries and
-                                                                        cereal meal!</li>
-                                                                </ol>
-
-                                                                <p class="optional">Note: Feel free to customize this
-                                                                    recipe by adding other
-                                                                    toppings like sliced
-                                                                    almonds, chia seeds, or a sprinkle of cinnamon for
-                                                                    added flavor and texture.
-                                                                <p>
-                                                            </div>
-
-
-                                                        </div>
                                                     </div>
 
-                                                    <div class="card mb-3" style="max-width: 540px;">
+                                                    <div class="card mb-3" style="max-width: 240px;">
                                                         <img src="/images/recipeHoney.jpg" class="rounded-end"
                                                             alt="...">
                                                         <div class="card-body">
-                                                            <h5 class="card-title">Blueberries and Cereal Meal</h5>
+                                                            <h5 class="card-title"> Cereal Meal</h5>
 
                                                             <h2>Ingredients:</h2>
 
 
                                                             <ul>
                                                                 <li>1 cup fresh blueberries</li>
-                                                                <li>1 cup cereal of your choice (such as corn flakes,
-                                                                    granola, or
-                                                                    oatmeal)
+                                                                <li>1 cup cereal of your choice (such as corn
+                                                                    flakes, granola, or oatmeal)
                                                                 </li>
                                                                 <li>1 cup milk (dairy or non-dairy alternative)</li>
                                                                 <li>Honey or sweetener (optional)</li>
@@ -335,148 +278,53 @@
 
                                                             <h2>Instructions:</h2>
                                                             <ol>
-                                                                <li>Wash the fresh blueberries thoroughly under running
-                                                                    water and drain
+                                                                <li>Wash the fresh blueberries thoroughly under
+                                                                    running water and drain
                                                                     them.
                                                                 </li>
-                                                                <li>In a serving bowl or individual bowls, pour 1 cup of
-                                                                    your favorite
+                                                                <li>In a serving bowl or individual bowls, pour 1
+                                                                    cup of your favorite
                                                                     cereal.
                                                                 </li>
-                                                                <li>Add the fresh blueberries on top of the cereal.</li>
-                                                                <li>Pour 1 cup of milk over the cereal and blueberries.
-                                                                    You can adjust
-                                                                    the
+                                                                <li>Add the fresh blueberries on top of the cereal.
+                                                                </li>
+                                                                <li>Pour 1 cup of milk over the cereal and
+                                                                    blueberries. You can adjust the
                                                                     amount of milk based
                                                                     on your preference for a thicker or thinner
                                                                     consistency.</li>
                                                                 <li>Optionally, drizzle honey or your preferred
-                                                                    sweetener over the top
-                                                                    for
+                                                                    sweetener over the top for
                                                                     added
                                                                     sweetness.</li>
-                                                                <li>Mix the ingredients gently with a spoon, ensuring
-                                                                    that the
-                                                                    blueberries
+                                                                <li>Mix the ingredients gently with a spoon,
+                                                                    ensuring that the blueberries
                                                                     are
                                                                     evenly
                                                                     distributed throughout the cereal.</li>
-                                                                <li>Let the cereal soak for a minute or two to allow the
-                                                                    flavors to
-                                                                    blend
+                                                                <li>Let the cereal soak for a minute or two to allow
+                                                                    the flavors to blend
                                                                     together.</li>
                                                                 <li>Enjoy your quick and nutritious blueberries and
                                                                     cereal meal!</li>
                                                             </ol>
 
-                                                            <p class="optional">Note: Feel free to customize this recipe
-                                                                by adding other
+                                                            <p class="optional">Note: Feel free to customize this
+                                                                recipe by adding other
                                                                 toppings like sliced
-                                                                almonds, chia seeds, or a sprinkle of cinnamon for added
-                                                                flavor and
-                                                                texture.
+                                                                almonds, chia seeds, or a sprinkle of cinnamon for
+                                                                added flavor and texture.
                                                             <p>
                                                         </div>
 
 
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="container" id="bloggerContent">
-                                            <div class="row">
-                                                <div class="col">
 
-                                                    <div class="card">
-                                                        <img src="/images/recipeCardPancake.png" class="rounded-end"
-                                                            width="300" height="150" alt="...">
-                                                        <div class="card-body">
-                                                            <h1>Recipe Blog Share</h1>
-
-                                                            <div class="recipe-card">
-                                                                <h2>Pancake </h2>
-                                                                <p class="author">Shared by Jane Smith</p>
-
-                                                                <div class="description">
-                                                                    <p>Start your day with delicious homemade pancakes!
-                                                                    </p>
-                                                                </div>
-
-                                                                <div class="ingredients">
-                                                                    <h3>Ingredients:</h3>
-                                                                    <ul>
-                                                                        <li>1 cup all-purpose flour</li>
-                                                                        <li>2 tablespoons sugar</li>
-                                                                        <li>1 teaspoon baking powder</li>
-                                                                        <li>1/2 teaspoon baking soda</li>
-                                                                        <li>1/4 teaspoon salt</li>
-                                                                        <li>1 cup buttermilk</li>
-                                                                        <li>1 large egg</li>
-                                                                        <li>2 tablespoons unsalted butter, melted</li>
-                                                                        <li>Optional toppings: maple syrup, fresh
-                                                                            fruits, whipped cream</li>
-                                                                    </ul>
-                                                                </div>
-
-                                                                <div class="instructions">
-                                                                    <h3>Instructions:</h3>
-                                                                    <ol>
-                                                                        <li>In a large mixing bowl, whisk together the
-                                                                            flour, sugar, baking
-                                                                            powder, baking
-                                                                            soda, and
-                                                                            salt.</li>
-                                                                        <li>In a separate bowl, whisk together the
-                                                                            buttermilk, egg, and
-                                                                            melted
-                                                                            butter.</li>
-                                                                        <li>Pour the wet ingredients into the dry
-                                                                            ingredients and stir until
-                                                                            just combined.
-                                                                            Do not
-                                                                            overmix; it's okay if there are some lumps.
-                                                                        </li>
-                                                                        <li>Heat a non-stick skillet or griddle over
-                                                                            medium heat. Grease it
-                                                                            lightly with
-                                                                            butter or
-                                                                            cooking spray.</li>
-                                                                        <li>Pour 1/4 cup of the pancake batter onto the
-                                                                            skillet for each
-                                                                            pancake.</li>
-                                                                        <li>Cook until bubbles form on the surface of
-                                                                            the pancake, then flip
-                                                                            and
-                                                                            cook for
-                                                                            another minute
-                                                                            or until golden brown.</li>
-                                                                        <li>Repeat with the remaining
-                                                                        <li>Serve the pancakes warm with your favorite
-                                                                            toppings, such as
-                                                                            maple
-                                                                            syrup, fresh
-                                                                            fruits, or
-                                                                            whipped cream.</li>
-                                                                    </ol>
-                                                                </div>
-
-                                                                <div class="note">
-                                                                    <p>Note: You can customize your pancakes by adding
-                                                                        ingredients like
-                                                                        chocolate chips,
-                                                                        blueberries, or
-                                                                        chopped nuts to the batter.</p>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-
-                                                <div class="card mb-3" style="max-width: 240px;">
+                                                <div class="card mb-3" style="max-width: 540px;">
                                                     <img src="/images/recipeHoney.jpg" class="rounded-end" alt="...">
                                                     <div class="card-body">
-                                                        <h5 class="card-title"> Cereal Meal</h5>
+                                                        <h5 class="card-title">Blueberries and Cereal Meal</h5>
 
                                                         <h2>Ingredients:</h2>
 
@@ -484,7 +332,8 @@
                                                         <ul>
                                                             <li>1 cup fresh blueberries</li>
                                                             <li>1 cup cereal of your choice (such as corn flakes,
-                                                                granola, or oatmeal)
+                                                                granola, or
+                                                                oatmeal)
                                                             </li>
                                                             <li>1 cup milk (dairy or non-dairy alternative)</li>
                                                             <li>Honey or sweetener (optional)</li>
@@ -501,52 +350,147 @@
                                                                 cereal.
                                                             </li>
                                                             <li>Add the fresh blueberries on top of the cereal.</li>
-                                                            <li>Pour 1 cup of milk over the cereal and blueberries. You
-                                                                can adjust the
+                                                            <li>Pour 1 cup of milk over the cereal and blueberries.
+                                                                You can adjust
+                                                                the
                                                                 amount of milk based
-                                                                on your preference for a thicker or thinner consistency.
-                                                            </li>
-                                                            <li>Optionally, drizzle honey or your preferred sweetener
-                                                                over the top for
+                                                                on your preference for a thicker or thinner
+                                                                consistency.</li>
+                                                            <li>Optionally, drizzle honey or your preferred
+                                                                sweetener over the top
+                                                                for
                                                                 added
                                                                 sweetness.</li>
-                                                            <li>Mix the ingredients gently with a spoon, ensuring that
-                                                                the blueberries
+                                                            <li>Mix the ingredients gently with a spoon, ensuring
+                                                                that the
+                                                                blueberries
                                                                 are
                                                                 evenly
                                                                 distributed throughout the cereal.</li>
                                                             <li>Let the cereal soak for a minute or two to allow the
-                                                                flavors to blend
+                                                                flavors to
+                                                                blend
                                                                 together.</li>
-                                                            <li>Enjoy your quick and nutritious blueberries and cereal
-                                                                meal!</li>
+                                                            <li>Enjoy your quick and nutritious blueberries and
+                                                                cereal meal!</li>
                                                         </ol>
 
-                                                        <p class="optional">Note: Feel free to customize this recipe by
-                                                            adding other
+                                                        <p class="optional">Note: Feel free to customize this recipe
+                                                            by adding other
                                                             toppings like sliced
                                                             almonds, chia seeds, or a sprinkle of cinnamon for added
-                                                            flavor and texture.
+                                                            flavor and
+                                                            texture.
                                                         <p>
                                                     </div>
 
 
                                                 </div>
                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="container" id="bloggerContent2">
+                                        <div class="row">
+                                            <div class="col">
 
-                                            <div class="card mb-3" style="max-width: 540px;">
+                                                <div class="card">
+                                                    <img src="/images/recipeCardPancake.png" class="rounded-end"
+                                                        width="300" height="150" alt="...">
+                                                    <div class="card-body">
+                                                        <h1>Recipe Blog Share</h1>
+
+                                                        <div class="recipe-card">
+                                                            <h2>Pancake </h2>
+                                                            <p class="author">Shared by Jane Smith</p>
+
+                                                            <div class="description">
+                                                                <p>Start your day with delicious homemade pancakes!
+                                                                </p>
+                                                            </div>
+
+                                                            <div class="ingredients">
+                                                                <h3>Ingredients:</h3>
+                                                                <ul>
+                                                                    <li>1 cup all-purpose flour</li>
+                                                                    <li>2 tablespoons sugar</li>
+                                                                    <li>1 teaspoon baking powder</li>
+                                                                    <li>1/2 teaspoon baking soda</li>
+                                                                    <li>1/4 teaspoon salt</li>
+                                                                    <li>1 cup buttermilk</li>
+                                                                    <li>1 large egg</li>
+                                                                    <li>2 tablespoons unsalted butter, melted</li>
+                                                                    <li>Optional toppings: maple syrup, fresh
+                                                                        fruits, whipped cream</li>
+                                                                </ul>
+                                                            </div>
+
+                                                            <div class="instructions">
+                                                                <h3>Instructions:</h3>
+                                                                <ol>
+                                                                    <li>In a large mixing bowl, whisk together the
+                                                                        flour, sugar, baking
+                                                                        powder, baking
+                                                                        soda, and
+                                                                        salt.</li>
+                                                                    <li>In a separate bowl, whisk together the
+                                                                        buttermilk, egg, and
+                                                                        melted
+                                                                        butter.</li>
+                                                                    <li>Pour the wet ingredients into the dry
+                                                                        ingredients and stir until
+                                                                        just combined.
+                                                                        Do not
+                                                                        overmix; it's okay if there are some lumps.
+                                                                    </li>
+                                                                    <li>Heat a non-stick skillet or griddle over
+                                                                        medium heat. Grease it
+                                                                        lightly with
+                                                                        butter or
+                                                                        cooking spray.</li>
+                                                                    <li>Pour 1/4 cup of the pancake batter onto the
+                                                                        skillet for each
+                                                                        pancake.</li>
+                                                                    <li>Cook until bubbles form on the surface of
+                                                                        the pancake, then flip
+                                                                        and
+                                                                        cook for
+                                                                        another minute
+                                                                        or until golden brown.</li>
+                                                                    <li>Repeat with the remaining
+                                                                    <li>Serve the pancakes warm with your favorite
+                                                                        toppings, such as
+                                                                        maple
+                                                                        syrup, fresh
+                                                                        fruits, or
+                                                                        whipped cream.</li>
+                                                                </ol>
+                                                            </div>
+
+                                                            <div class="note">
+                                                                <p>Note: You can customize your pancakes by adding
+                                                                    ingredients like
+                                                                    chocolate chips,
+                                                                    blueberries, or
+                                                                    chopped nuts to the batter.</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <div class="card mb-3" style="max-width: 240px;">
                                                 <img src="/images/recipeHoney.jpg" class="rounded-end" alt="...">
                                                 <div class="card-body">
-                                                    <h5 class="card-title">Blueberries and Cereal Meal</h5>
+                                                    <h5 class="card-title"> Cereal Meal</h5>
 
                                                     <h2>Ingredients:</h2>
 
 
                                                     <ul>
                                                         <li>1 cup fresh blueberries</li>
-                                                        <li>1 cup cereal of your choice (such as corn flakes, granola,
-                                                            or
-                                                            oatmeal)
+                                                        <li>1 cup cereal of your choice (such as corn flakes,
+                                                            granola, or oatmeal)
                                                         </li>
                                                         <li>1 cup milk (dairy or non-dairy alternative)</li>
                                                         <li>Honey or sweetener (optional)</li>
@@ -554,149 +498,213 @@
 
                                                     <h2>Instructions:</h2>
                                                     <ol>
-                                                        <li>Wash the fresh blueberries thoroughly under running water
-                                                            and drain
+                                                        <li>Wash the fresh blueberries thoroughly under running
+                                                            water and drain
                                                             them.
                                                         </li>
-                                                        <li>In a serving bowl or individual bowls, pour 1 cup of your
-                                                            favorite
+                                                        <li>In a serving bowl or individual bowls, pour 1 cup of
+                                                            your favorite
                                                             cereal.
                                                         </li>
                                                         <li>Add the fresh blueberries on top of the cereal.</li>
-                                                        <li>Pour 1 cup of milk over the cereal and blueberries. You can
-                                                            adjust
-                                                            the
+                                                        <li>Pour 1 cup of milk over the cereal and blueberries. You
+                                                            can adjust the
                                                             amount of milk based
                                                             on your preference for a thicker or thinner consistency.
                                                         </li>
-                                                        <li>Optionally, drizzle honey or your preferred sweetener over
-                                                            the top
-                                                            for
+                                                        <li>Optionally, drizzle honey or your preferred sweetener
+                                                            over the top for
                                                             added
                                                             sweetness.</li>
-                                                        <li>Mix the ingredients gently with a spoon, ensuring that the
-                                                            blueberries
+                                                        <li>Mix the ingredients gently with a spoon, ensuring that
+                                                            the blueberries
                                                             are
                                                             evenly
                                                             distributed throughout the cereal.</li>
-                                                        <li>Let the cereal soak for a minute or two to allow the flavors
-                                                            to
-                                                            blend
+                                                        <li>Let the cereal soak for a minute or two to allow the
+                                                            flavors to blend
                                                             together.</li>
-                                                        <li>Enjoy your quick and nutritious blueberries and cereal meal!
-                                                        </li>
+                                                        <li>Enjoy your quick and nutritious blueberries and cereal
+                                                            meal!</li>
                                                     </ol>
 
                                                     <p class="optional">Note: Feel free to customize this recipe by
                                                         adding other
                                                         toppings like sliced
-                                                        almonds, chia seeds, or a sprinkle of cinnamon for added flavor
-                                                        and
-                                                        texture.
+                                                        almonds, chia seeds, or a sprinkle of cinnamon for added
+                                                        flavor and texture.
                                                     <p>
                                                 </div>
 
 
                                             </div>
                                         </div>
-                                        <div class="container" id="bloggerContent">
-                                            <div class="row">
-                                                <div class="col">
 
-                                                    <div class="card">
-                                                        <img src="/images/recipeCardPancake.png" class="rounded-end"
-                                                            width="300" height="150" alt="...">
-                                                        <div class="card-body">
-                                                            <h1>Recipe Blog Share</h1>
+                                        <div class="card mb-3" style="max-width: 540px;">
+                                            <img src="/images/recipeHoney.jpg" class="rounded-end" alt="...">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Blueberries and Cereal Meal</h5>
 
-                                                            <div class="recipe-card">
-                                                                <h2>Pancake </h2>
-                                                                <p class="author">Shared by Jane Smith</p>
+                                                <h2>Ingredients:</h2>
 
-                                                                <div class="description">
-                                                                    <p>Start your day with delicious homemade pancakes!
-                                                                    </p>
-                                                                </div>
 
-                                                                <div class="ingredients">
-                                                                    <h3>Ingredients:</h3>
-                                                                    <ul>
-                                                                        <li>1 cup all-purpose flour</li>
-                                                                        <li>2 tablespoons sugar</li>
-                                                                        <li>1 teaspoon baking powder</li>
-                                                                        <li>1/2 teaspoon baking soda</li>
-                                                                        <li>1/4 teaspoon salt</li>
-                                                                        <li>1 cup buttermilk</li>
-                                                                        <li>1 large egg</li>
-                                                                        <li>2 tablespoons unsalted butter, melted</li>
-                                                                        <li>Optional toppings: maple syrup, fresh
-                                                                            fruits, whipped cream</li>
-                                                                    </ul>
-                                                                </div>
+                                                <ul>
+                                                    <li>1 cup fresh blueberries</li>
+                                                    <li>1 cup cereal of your choice (such as corn flakes, granola,
+                                                        or
+                                                        oatmeal)
+                                                    </li>
+                                                    <li>1 cup milk (dairy or non-dairy alternative)</li>
+                                                    <li>Honey or sweetener (optional)</li>
+                                                </ul>
 
-                                                                <div class="instructions">
-                                                                    <h3>Instructions:</h3>
-                                                                    <ol>
-                                                                        <li>In a large mixing bowl, whisk together the
-                                                                            flour, sugar, baking
-                                                                            powder, baking
-                                                                            soda, and
-                                                                            salt.</li>
-                                                                        <li>In a separate bowl, whisk together the
-                                                                            buttermilk, egg, and
-                                                                            melted
-                                                                            butter.</li>
-                                                                        <li>Pour the wet ingredients into the dry
-                                                                            ingredients and stir until
-                                                                            just combined.
-                                                                            Do not
-                                                                            overmix; it's okay if there are some lumps.
-                                                                        </li>
-                                                                        <li>Heat a non-stick skillet or griddle over
-                                                                            medium
-                                                                </div>
+                                                <h2>Instructions:</h2>
+                                                <ol>
+                                                    <li>Wash the fresh blueberries thoroughly under running water
+                                                        and drain
+                                                        them.
+                                                    </li>
+                                                    <li>In a serving bowl or individual bowls, pour 1 cup of your
+                                                        favorite
+                                                        cereal.
+                                                    </li>
+                                                    <li>Add the fresh blueberries on top of the cereal.</li>
+                                                    <li>Pour 1 cup of milk over the cereal and blueberries. You can
+                                                        adjust
+                                                        the
+                                                        amount of milk based
+                                                        on your preference for a thicker or thinner consistency.
+                                                    </li>
+                                                    <li>Optionally, drizzle honey or your preferred sweetener over
+                                                        the top
+                                                        for
+                                                        added
+                                                        sweetness.</li>
+                                                    <li>Mix the ingredients gently with a spoon, ensuring that the
+                                                        blueberries
+                                                        are
+                                                        evenly
+                                                        distributed throughout the cereal.</li>
+                                                    <li>Let the cereal soak for a minute or two to allow the flavors
+                                                        to
+                                                        blend
+                                                        together.</li>
+                                                    <li>Enjoy your quick and nutritious blueberries and cereal meal!
+                                                    </li>
+                                                </ol>
 
-                                                                <div class="note">
-                                                                    <p>Note: You can customize your pancakes by adding
-                                                                        ingredients like
-                                                                        chocolate chips,
-                                                                        blueberries, or
-                                                                        chopped nuts to the batter.</p>
-                                                                </div>
+                                                <p class="optional">Note: Feel free to customize this recipe by
+                                                    adding other
+                                                    toppings like sliced
+                                                    almonds, chia seeds, or a sprinkle of cinnamon for added flavor
+                                                    and
+                                                    texture.
+                                                <p>
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="container" id="bloggerContent8">
+                                        <div class="row">
+                                            <div class="col">
+
+                                                <div class="card">
+                                                    <img src="/images/recipeCardPancake.png" class="rounded-end"
+                                                        width="300" height="150" alt="...">
+                                                    <div class="card-body">
+                                                        <h1>Recipe Blog Share</h1>
+
+                                                        <div class="recipe-card">
+                                                            <h2>Pancake </h2>
+                                                            <p class="author">Shared by Jane Smith</p>
+
+                                                            <div class="description">
+                                                                <p>Start your day with delicious homemade pancakes!
+                                                                </p>
+                                                            </div>
+
+                                                            <div class="ingredients">
+                                                                <h3>Ingredients:</h3>
+                                                                <ul>
+                                                                    <li>1 cup all-purpose flour</li>
+                                                                    <li>2 tablespoons sugar</li>
+                                                                    <li>1 teaspoon baking powder</li>
+                                                                    <li>1/2 teaspoon baking soda</li>
+                                                                    <li>1/4 teaspoon salt</li>
+                                                                    <li>1 cup buttermilk</li>
+                                                                    <li>1 large egg</li>
+                                                                    <li>2 tablespoons unsalted butter, melted</li>
+                                                                    <li>Optional toppings: maple syrup, fresh
+                                                                        fruits, whipped cream</li>
+                                                                </ul>
+                                                            </div>
+
+                                                            <div class="instructions">
+                                                                <h3>Instructions:</h3>
+                                                                <ol>
+                                                                    <li>In a large mixing bowl, whisk together the
+                                                                        flour, sugar, baking
+                                                                        powder, baking
+                                                                        soda, and
+                                                                        salt.</li>
+                                                                    <li>In a separate bowl, whisk together the
+                                                                        buttermilk, egg, and
+                                                                        melted
+                                                                        butter.</li>
+                                                                    <li>Pour the wet ingredients into the dry
+                                                                        ingredients and stir until
+                                                                        just combined.
+                                                                        Do not
+                                                                        overmix; it's okay if there are some lumps.
+                                                                    </li>
+                                                                    <li>Heat a non-stick skillet or griddle over
+                                                                        medium
+                                                                    </li>
+                                                                </ol>
+                                                            </div>
+
+                                                            <div class="note">
+                                                                <p>Note: You can customize your pancakes by adding
+                                                                    ingredients like
+                                                                    chocolate chips,
+                                                                    blueberries, or
+                                                                    chopped nuts to the batter.</p>
                                                             </div>
                                                         </div>
                                                     </div>
-
                                                 </div>
 
-                                                <div class="card mb-3" style="max-width: 240px;">
-                                                    <img src="/images/recipeHoney.jpg" class="rounded-end" alt="...">
-                                                    <div class="card-body">
-                                                        <h5 class="card-title"> Cereal Meal</h5>
-
-
-
-                                                    </div>
-
-
-                                                </div>
                                             </div>
 
-                                            <div class="card mb-3" style="max-width: 540px;">
+                                            <div class="card mb-3" style="max-width: 240px;">
                                                 <img src="/images/recipeHoney.jpg" class="rounded-end" alt="...">
                                                 <div class="card-body">
+                                                    <h5 class="card-title"> Cereal Meal</h5>
+
+
 
                                                 </div>
 
 
                                             </div>
                                         </div>
+
+                                        <div class="card mb-3" style="max-width: 540px;">
+                                            <img src="/images/recipeHoney.jpg" class="rounded-end" alt="...">
+                                            <div class="card-body">
+
+                                            </div>
+
+
+                                        </div>
                                     </div>
+
                                     <div class="conatiner">
                                         <div class="row">
                                             <div class="col">
 
-                                                <div class="container" id="bloggerContent">
+                                                <div class="container" id="bloggerContent3">
                                                     <div class="row">
                                                         <div class="col">
 
@@ -920,7 +928,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="container" id="bloggerContent">
+                                        <div class="container" id="bloggerContent4">
                                             <div class="row">
                                                 <div class="col">
 
@@ -1135,7 +1143,7 @@
 
 
                                             </div>
-                                            <div class="container" id="bloggerContent">
+                                            <div class="container" id="bloggerContent5">
                                                 <div class="row">
                                                     <div class="col">
 
@@ -1192,8 +1200,8 @@
                                                                                 overmix; it's okay if there are some
                                                                                 lumps.
                                                                             </li>
-                                                                            <li>Heat a non-stick skillet or griddle over
-                                                                                medium
+                                                                        </ol>
+
                                                                     </div>
 
                                                                     <div class="note">
@@ -1234,7 +1242,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="container" id="bloggerContent">
+                                        <div class="container" id="bloggerContent6">
                                             <div class="row">
                                                 <div class="col">
 
@@ -1289,6 +1297,8 @@
                                                                         </li>
                                                                         <li>Heat a non-stick skillet or griddle over
                                                                             medium
+                                                                        </li>
+                                                                    </ol>
                                                                 </div>
 
                                                                 <div class="note">
@@ -1381,6 +1391,8 @@
                                                                         </li>
                                                                         <li>Heat a non-stick skillet or griddle over
                                                                             medium
+                                                                        </li>
+                                                                    </ol>
                                                                 </div>
 
                                                                 <div class="note">
@@ -1732,9 +1744,9 @@
 
                                                 <div class="container">
                                                     <div class="row">
-                                                        <div class="col-12" id="nationalPark">
+                                                        <div class="col-12" id="bloggerRecipeStarter1">
 
-                                                            <section class="col-9" id="nationalParkHome">
+                                                            <section class="col-9" id="bloggerRecipe1">
 
 
                                                                 <div class="container">
@@ -1906,6 +1918,8 @@
                                     </div>
 
                                 </div>
+                                <!-- user content on left END-->
+
 
                                 <!-- Users post card content -->
                                 <div class="container" id="usersPostCard">
@@ -1935,21 +1949,22 @@
                                                             </svg>
                                                             <span class="visually-hidden">Button</span>
                                                         </button>
-                                                    </div>
-                                                </div>
-                                                <div class="input-group">
-                                                    <button class="input-group-text" id="basic-addon1">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                            fill="currentColor" class="bi bi-search"
-                                                            viewBox="0 0 16 16">
-                                                            <path
-                                                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
-                                                            </path>
-                                                        </svg>
+
+                                                        <button class="input-group-text" type="button"
+                                                            id="basic-addon1">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                height="16" fill="currentColor" class="bi bi-search"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z">
+                                                                </path>
+                                                            </svg>
+                                                        </button>
                                                         <input type="text" id="searchInput"
-                                                            placeholder="Search by username..." aria-label="searchInput"
+                                                            placeholder="Search by username" aria-label="searchInput"
                                                             aria-describedby="searchInput">
-                                                    </button>
+
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -1963,26 +1978,39 @@
                                 </div>
 
                             </div>
+
+
                             <h1><a href="#topOfPage">Back to top</a></h1>
 
 
 
                         </div>
                     </div>
+
                 </div>
             </div>
 
         </div>
+        <!-- apiUserPost and blogContent END  -->
 
-        <!--BLOG CONTENT section-->
+        <!--BLOG CONTENT section END-->
     </main>
     <!-- main content end-->
 
-    <footer id="bottomOfPage"></footer>
+
+
+
+
+
+
+    <footer id="bottomOfPage">See you again....</footer>
 
     <!-- Page-specific code -->
     <!--post.js script -->
     <script src="./posts.js"></script>
 </body>
+
+
+
 
 </html>

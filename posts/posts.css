@@ -1,120 +1,173 @@
+
+
+/* styling for cards  */
+
 .card {
+
+
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+
     margin: 1%;
+
+
     margin: auto;
+
+
     border-radius: 20px;
+
+
     margin-bottom: 3%;
+
+
     border-color: rgb(244, 246, 244);
+
+
     background-color: rgba(252, 252, 252, 0.849);
    
 }
 
+
+/* style profile links */
 #profileLinks {
+
+
     display: flex;
+
+
     justify-content: end;
+
+
     margin-top: 2%;
 }
 
 
 
-
-/* {
-    background:linear-gradient(red,green,yellow);
-} */
-
-
-main {
+/* main element height set to 100% for background image */
+main,html{
 
     height: 100%;
 }
 
+
+/* logoImage styling */
 #logoImage {
+
+
     margin-left: 45%;
     
     
 }
 
 
-/* 
-body{
-    background-image: url("/images/backgroundImage.png");
-    background-repeat: no-repeat;
-    background-blend-mode: normal;
-    background-size:100%;
-    height:100%;
-} */
 
-
-
+/* body element styling for background Image*/
 body {
+
+
     background-image: url("/images/recipeCardTarts.png");
+
+
     background-size: cover;
+
+
     background-attachment: fixed;
+
+
     background-position: center;
+
+
     background-repeat: no-repeat;
     /* background-blend-mode:; */
 
 }
 
 
-html {
-    height: 100%;
-}
 
-
+/* style hero section  */
 #heroSection {
-    display: finline-flex;
+
+    display: inline-flex;
+
     padding: 8%;
+
+
     flex-wrap: wrap;
+
+
     text-align: left;
+
+
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', sans-serif;
+
+
     font-size: 30px;
+
+
     font-style: oblique;
+
+
     font-weight: bolder;
     
 }
 
 
+/* styling for a paragraphs elements */
 p {
     display: flex;
+
+
     flex-wrap: nowrap;
+
+
     text-align: center;
+
+
     align-content: center;
+
+
     justify-content: center;
 
     font-size: 100%;
+
+
     color: black;
+
+
     font-style: oblique;
+
+
     font-weight: 100%;
+
+
     font-family: 'Times New Roman', Times, serif;
 }
 
 
 
 
-
+/* styling for API data */
 #usersPostCard {
+
+
     border: 0px #737bb9;
+
+
     padding: 2%;
+
+
     border-radius: 1px;
 
-    /* background-color: rgba(186, 208, 144, 0.5); */
-
-
-
 }
 
 
 
-.center-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
 
 
 #profileButton {
+
+
     background-color: rgb(159, 210, 38);
     /* Set the background color to pink */
     padding: 7px 17px;
@@ -134,7 +187,13 @@ p {
 }
 
 .blockquote-footer{
+
+
+
     color:black;
+
+
+
     font-size: larger;
     
 }
@@ -147,44 +206,76 @@ p {
 } */
 
 
-#mountainInfo,
-#nationalPark {
+#quoteCard,
+#bloggerRecipeStarter {
+
+
     display: flex;
+
+
     flex-wrap: nowrap;
 
 
 
 }
 
-#nationalPark {
+#bloggerRecipeStarter,#bloggerRecipeStarter1,#bloggerRecipeStarter2 {
+
+
+
     direction: rtl;
+
+
     justify-content: space;
+
+
+
     margin-top: 2%;
+
+
     align-content: flex-start;
 
 }
 
 #blogContent{
+
+
+
     direction: ltr;
+
+
     justify-content: space;
+
+
     margin-top: 2%;
+
+
     align-content: flex-start;
+
+
     display: flex;
+
+
     flex-wrap: nowrap;
 
 }
 
-#nationalParkHome {
+#bloggerRecipe,#bloggerRecipe1{
+
     direction: ltr;
 
 
 }
 
-#mountainInfoHome {
+
+
+
+#quoteCardHome {
+
+    
     direction: ltr;
 
 }
 
 
 
-/*mountain paragraph styling left to right*/
