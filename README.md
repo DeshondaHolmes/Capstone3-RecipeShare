@@ -28,4 +28,7 @@ We created 4 pages (landing page, registration page, posts page and a profile pa
 ![Profile](./images/profile%20(2).JPG)
 
 
+![Post page](./images/postpageContent.png).JPG)
+
+
 

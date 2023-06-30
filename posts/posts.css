@@ -2,7 +2,7 @@
 
 /* styling for cards  */
 
-.card {
+.card:hover{
 
 
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -25,6 +25,8 @@
 
 
     background-color: rgba(252, 252, 252, 0.849);
+
+    size: 200px;
    
 }
 
