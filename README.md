@@ -21,11 +21,11 @@ We created 4 pages (landing page, registration page, posts page and a profile pa
 - Authentication: Implementation of user authentication and authorization using JWT (JSON Web Tokens).
 
 
-![landing page ](./images/landing%20(2).JPG)
+![landing page ](/images/myLogin.png)
 
-![Register Page](./images/register%20(2).JPG)
+![Register Page](/images/mySignUp.png)
 
-![Profile](./images/profile%20(2).JPG)
+![Profile](/images/myProfile.png)
 
 
 
