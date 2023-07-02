@@ -112,14 +112,19 @@ function buildUserPostsCard(posts) {
         let cardUserName = document.createElement("p");
         cardUserName.className = "card-text";
         cardUserName.textContent = "@" + post.username;
+
         // Create a paragraph element for the post content
         let cardUserContent = document.createElement("p");
         cardUserContent.className = "card-text";
         cardUserContent.textContent = post.text;
+
         // Create a paragraph element for the post timestamp
         let cardUserTimeStamp = document.createElement("p");
         cardUserTimeStamp.className = "card-text";
         cardUserTimeStamp.textContent = `${new Date(post.createdAt).toDateString()} , ${new Date(post.createdAt).toLocaleTimeString()}`;
+
+
+        
         // Append user image, username, content, and timestamp to the card body
         divCardBody.appendChild(userImage);
         divCardBody.appendChild(cardUserName);
