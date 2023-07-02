@@ -28,7 +28,13 @@ We created 4 pages (landing page, registration page, posts page and a profile pa
 ![Profile](./images/profile%20(2).JPG)
 
 
-![Post page](./images/postpageContent.png).JPG)
+
+#Post blogger content
+![post page greet](/images/recipeShareSite1.png "Post greeting")
+
+![post page welcome](/images/recipeShareSite2.png "Post welcome")
+
+![post page blogger content](/images/recipeShareSite3.png "Post blogger content")
 
 
 
